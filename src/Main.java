@@ -5,11 +5,11 @@ public class Main {
     public static Scanner sc =  new Scanner(System.in);
     public static void main(String[] args) {
 
-        generarContraseña();
+        generatePassword();
 
     }
 
-    public static void generarContraseña(){
+    public static void generatePassword(){
         System.out.println("Enter how many characters you want for your password: ");
         int cantidad = Integer.parseInt(sc.nextLine());
 
