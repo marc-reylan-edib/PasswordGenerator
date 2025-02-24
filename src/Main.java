@@ -13,9 +13,26 @@ public class Main {
         System.out.println("+....................+");
         System.out.println("| PASSWORD GENERATOR |");
         System.out.println("+....................+");
-        System.out.println("Enter how many characters you want for your password: ");
-        int cantidad = Integer.parseInt(sc.nextLine());
 
+        int cantidad = 0;
+        boolean valid = false;
+
+        while (!valid) {
+            try{
+                System.out.println("Enter how many characters you want for your password: ");
+                cantidad = Integer.parseInt(sc.nextLine());
+    
+                if(cantidad < 1){
+                    System.out.println("ERROR: The number must be 1 or bigger. ");
+                } else{
+                    valid = true;
+                }
+    
+            }catch(NumberFormatException e){
+                System.out.println("ERROR: Please enter a valid number");
+            }   
+        }
+        
         String characters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
         String password = "";
 
