@@ -10,7 +10,9 @@ public class Main {
     }
 
     public static void generatePassword(){
-        System.out.println("PASSWORD GENERATOR");
+        System.out.println("+....................+");
+        System.out.println("| PASSWORD GENERATOR |");
+        System.out.println("+....................+");
         System.out.println("Enter how many characters you want for your password: ");
         int cantidad = Integer.parseInt(sc.nextLine());
 
