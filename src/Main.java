@@ -17,12 +17,11 @@ public class Main {
         int cantidad = 0;
         boolean valid = false;
 
-        while (!valid) {
             try{
                 System.out.println("Enter how many characters you want for your password: ");
                 cantidad = Integer.parseInt(sc.nextLine());
     
-                if(cantidad < 1){
+                if(cantidad <= 0){
                     System.out.println("ERROR: The number must be 1 or bigger. ");
                 } else{
                     valid = true;
@@ -31,7 +30,6 @@ public class Main {
             }catch(NumberFormatException e){
                 System.out.println("ERROR: Please enter a valid number");
             }   
-        }
         
         String characters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
         String password = "";
