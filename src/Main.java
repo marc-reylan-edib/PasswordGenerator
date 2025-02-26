@@ -32,11 +32,12 @@ public class Main {
             }   
         
         String characters = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
-        String password = "";
+        StringBuilder password = new StringBuilder();
+
 
         for(int x = 0; x < cantidad ; x++){
     
-            password =  password + characters.charAt((int)(Math.random() * characters.length()-1));
+            password.append(characters.charAt((int)(Math.random()*characters.length())));
         }
         System.out.println("Password generated: " + password);
     
