@@ -1,4 +1,3 @@
-Marc Reylan Madayag Sambrano						1 DAM
 
 **DOCUMENTACIÓN PASSWORD GENERATOR**
 
